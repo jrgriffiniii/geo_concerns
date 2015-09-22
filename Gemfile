@@ -36,8 +36,13 @@ gem 'rsolr', '~> 1.0.6'
 gem 'devise', '~> 3.0'
 gem 'devise-guests', '~> 0.3'
 
-gem 'curation_concerns', '~> 0.1.0'
-gem 'curation_concerns-models', '~> 0.1.0'
+gem 'active-fedora', '>= 9.4.1'
+
+# Implemented in order to work-around for Issue #17
+#gem 'curation_concerns', '~> 0.1.0'
+gem 'curation_concerns', :git => 'https://github.com/projecthydra-labs/curation_concerns.git'
+#gem 'curation_concerns-models', '~> 0.1.0'
+gem 'curation_concerns-models', :git => 'https://github.com/projecthydra-labs/curation_concerns.git'
 
 gem 'slop', '~> 3.6.0' # This just helps us generate a valid Gemfile.lock when Rails 4.2 is installed (which requires byebug which has a dependency on slop)
 
