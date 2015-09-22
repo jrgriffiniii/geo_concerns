@@ -38,18 +38,21 @@ gem 'devise-guests', '~> 0.3'
 
 gem 'active-fedora', '>= 9.4.1'
 
+gem 'nest', '~> 2.0'
+gem 'resque', '~> 1.25.2'
+
 # Implemented in order to work-around for Issue #17
 #gem 'curation_concerns', '~> 0.1.0'
-gem 'curation_concerns', :git => 'https://github.com/projecthydra-labs/curation_concerns.git'
+gem 'curation_concerns', :git => 'https://github.com/projecthydra-labs/curation_concerns.git', :ref => '3ac56c24b42d35627d2a1444c78d1f3b23632334'
 #gem 'curation_concerns-models', '~> 0.1.0'
-gem 'curation_concerns-models', :git => 'https://github.com/projecthydra-labs/curation_concerns.git'
+gem 'curation_concerns-models', :git => 'https://github.com/projecthydra-labs/curation_concerns.git', :ref => '3ac56c24b42d35627d2a1444c78d1f3b23632334'
 
 gem 'slop', '~> 3.6.0' # This just helps us generate a valid Gemfile.lock when Rails 4.2 is installed (which requires byebug which has a dependency on slop)
 
 # @todo Structure for gemspec
 
 # Added in response to https://github.com/projecthydra-labs/hydra-works/issues/203
-gem "hydra-pcdm", :git => 'https://github.com/projecthydra-labs/hydra-pcdm.git'
+gem "hydra-pcdm", :git => 'https://github.com/projecthydra-labs/hydra-pcdm.git', :ref => 'bce6accb14aba03df5210321d2e52b5008658c72'
 
 gem 'hydra-head', '~> 9.0'
 gem "breadcrumbs_on_rails", "~> 2.3.0"
